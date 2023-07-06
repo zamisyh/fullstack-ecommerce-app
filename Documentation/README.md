@@ -1,0 +1,1 @@
+https://zamisyh.notion.site/YukBlanja-App-Database-Initialization-439573ddf16e4dddab48e78c174fe81d?pvs=4
