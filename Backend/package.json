@@ -1,39 +1,52 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zamisyh/fullstack-ecommerce-app.git"
-  },
-  "author": "Zamzam Saputra",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zamisyh/fullstack-ecommerce-app/issues"
-  },
-  "homepage": "https://github.com/zamisyh/fullstack-ecommerce-app#readme",
-  "dependencies": {
-    "bcrypt": "^5.1.0",
-    "body-parser": "^1.20.2",
-    "colors": "^1.4.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "joi": "^17.9.2",
-    "jsonwebtoken": "^9.0.1",
-    "moment": "^2.29.4",
-    "multer": "^1.4.5-lts.1",
-    "mysql": "^2.18.1",
-    "node-cron": "^3.0.2",
-    "nodemailer": "^6.9.3",
-    "nodemon": "^2.0.22"
-  },
-  "devDependencies": {
-    "sequelize": "^6.32.1",
-    "sequelize-cli": "^6.6.1"
-  }
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server",
+        "server": "nodemon server",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "prepare": "cd .. && husky install Backend/.husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zamisyh/fullstack-ecommerce-app.git"
+    },
+    "author": "Zamzam Saputra",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zamisyh/fullstack-ecommerce-app/issues"
+    },
+    "homepage": "https://github.com/zamisyh/fullstack-ecommerce-app#readme",
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "body-parser": "^1.20.2",
+        "colors": "^1.4.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "joi": "^17.9.2",
+        "jsonwebtoken": "^9.0.1",
+        "moment": "^2.29.4",
+        "multer": "^1.4.5-lts.1",
+        "mysql": "^2.18.1",
+        "node-cron": "^3.0.2",
+        "nodemailer": "^6.9.3",
+        "nodemon": "^2.0.22"
+    },
+    "devDependencies": {
+        "eslint": "^8.44.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^16.0.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "husky": "^8.0.3",
+        "prettier": "^3.0.0",
+        "sequelize": "^6.32.1",
+        "sequelize-cli": "^6.6.1"
+    }
 }
