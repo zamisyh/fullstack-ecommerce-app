@@ -27,7 +27,7 @@ module.exports = {
           as: 'customer_id'
         }
       },
-      product_comment: {
+      product_comment_text: {
         type: Sequelize.TEXT
       },
       product_comment_like: {

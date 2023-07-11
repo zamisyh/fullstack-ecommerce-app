@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
   product_comment.init({
     product_id: DataTypes.INTEGER,
     customer_id: DataTypes.INTEGER,
-    product_comment: DataTypes.TEXT,
+    product_comment_text: DataTypes.TEXT,
     product_comment_like: DataTypes.INTEGER,
     product_comment_rating: DataTypes.INTEGER,
     product_created_at: DataTypes.DATE

@@ -12,7 +12,8 @@
         "lint:fix": "eslint --fix .",
         "prepare": "cd .. && husky install Backend/.husky",
         "db:reset": "cd databases/ && sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all",
-        "db:import": "cd databases/config && node import_indonesia_sql.js"
+        "db:import": "cd databases/config && node import_indonesia_sql.js",
+        "db:connect": "cd databases/ && npx sequelize-auto -o './databases/models' -d 2023_fullstack_ecommerce_app -h localhost -u root -p 3306 -x -e mysql"
     },
     "repository": {
         "type": "git",
@@ -41,7 +42,8 @@
         "mysql2": "^3.5.0",
         "node-cron": "^3.0.2",
         "nodemailer": "^6.9.3",
-        "nodemon": "^2.0.22"
+        "nodemon": "^2.0.22",
+        "sequelize-auto": "^0.8.8"
     },
     "devDependencies": {
         "eslint": "^8.44.0",

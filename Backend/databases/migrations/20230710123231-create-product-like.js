@@ -18,7 +18,7 @@ module.exports = {
           as: 'product_id'
         }
       },
-      product_like: {
+      product_like_counter: {
         type: Sequelize.INTEGER
       },
       createdAt: {
