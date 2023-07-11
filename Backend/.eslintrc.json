@@ -1,13 +1,23 @@
+
 {
     "root": true,
-    "env": {
-        "commonjs": true,
-        "es2021": true,
-        "node": true
+    "ecmaFeatures": {
+        "modules": true,
+        "spread" : true,
+        "restParams" : true
+    },
+    "env" : {
+        "browser" : true,
+        "node" : true,
+        "es6" : true
     },
     "extends": ["eslint:recommended", "prettier"],
-    "parserOptions": {
-        "ecmaVersion": "latest"
+    "rules" : {
+        "no-unused-vars" : 2,
+        "no-undef" : 2
     },
-    "rules": {}
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    }
 }

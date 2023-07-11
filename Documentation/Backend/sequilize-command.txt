@@ -1,0 +1,21 @@
+Sequilize CLI command - Create db
+npx sequelize db:create
+
+Sequilize Cli command - Generate Model & Migrration
+npx sequelize model:generate --name Users --attributes username:string,email:string,password:string,token:string
+
+Sequilize Cli command - Generate Seeders
+npx sequelize seed:generate --name Users
+
+Sequilize Cli command - Migrate
+npx sequelize-cli db:migrate
+
+Sequilize Cli command - Migrate Undo 
+npx sequelize-cli db:migrate:undo:all
+
+Sequilize Cli command - Migrate Seeders 
+npx sequelize-cli db:seed:all
+
+Sequilize Cli command - Migrate Seeders 
+npx sequelize-cli db:seed:undo:all
+
